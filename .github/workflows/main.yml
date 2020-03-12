@@ -17,5 +17,6 @@ jobs:
     steps:
     - name: Hi and add something to the log file hopefully?
       run: |
-        npm inslt
         echo "::debug file=app.js,line=1::Entered octocatAddition method"
+        npm inslt
+        
