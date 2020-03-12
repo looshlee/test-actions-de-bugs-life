@@ -4,11 +4,7 @@ name: debug
 
 # Controls when the action will run. Triggers the workflow on push or pull request  
 # events but only for the master branch
-on:
-  push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+on: [watch]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -21,5 +17,5 @@ jobs:
     steps:
     - name: Hi and add something to the log file hopefully?
       run: |
-        echo Hello, world!
+        npm inslt
         echo "::debug file=app.js,line=1::Entered octocatAddition method"
